@@ -1,8 +1,9 @@
 import { Elysia } from "elysia";
+import { rateLimit } from 'elysia-rate-limit'
 
-const app = new Elysia();
+const app = new Elysia().use(rateLimit());
 
-app.get("/", async (context) => {
+app.get("/", async () => {
   try {
     return new Response(JSON.stringify("Bookaburra 0.1"));
   } catch (error: any) {

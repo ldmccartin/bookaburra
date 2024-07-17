@@ -14,6 +14,7 @@
     "typescript": "5.0.0"
   },
   "dependencies": {
-    "elysia": "1.1.2"
+    "elysia": "1.1.2",
+    "elysia-rate-limit": "4.1.0"
   }
 }
