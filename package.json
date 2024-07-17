@@ -2,6 +2,10 @@
   "name": "kookaburra",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "build": "bun install",
+    "start": "bun run index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
