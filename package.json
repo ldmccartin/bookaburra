@@ -14,7 +14,9 @@
     "typescript": "5.0.0"
   },
   "dependencies": {
+    "dotenv": "16.4.5",
     "elysia": "1.1.2",
-    "elysia-rate-limit": "4.1.0"
+    "elysia-rate-limit": "4.1.0",
+    "mongoose": "8.5.1"
   }
 }
