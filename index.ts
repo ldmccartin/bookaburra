@@ -13,7 +13,7 @@ const app = new Elysia().use(rateLimit());
 
 app.get('/', async () => {
   try {
-    return new Response(JSON.stringify("Bookaburra"));
+    return new Response('Bookaburra is live...');
   } catch (error: any) {
     return new Response(error.message, { status: 500 });
   }
