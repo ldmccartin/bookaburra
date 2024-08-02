@@ -4,13 +4,12 @@ import { Resource } from './schema/schema';
 import type { SuccessResult } from 'open-graph-scraper'
 
 export interface resource {
-  name: string;
   url: string;
   ogData?: SuccessResult['result']
 }
 
-export const save = async (name: string, url: string) => {
-  const resource = new Resource({ name, url });
+export const save = async ( url: string) => {
+  const resource = new Resource({ url });
   await resource.save();
 }
 

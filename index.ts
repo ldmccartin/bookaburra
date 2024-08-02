@@ -21,7 +21,7 @@ app.get('/', async () => {
   }
 });
 app.get('/all', async () => await getAll());
-app.post('/resource', async ({ body: { name, url } }: resourcePost) => await save(name, url)).use(rateLimit());
+app.post('/resource', async ({ body: { url } }: resourcePost) => {console.log(url); await save(url)}).use(rateLimit());
 
 app.listen(3000, () => {
   console.log('Server running...');
