@@ -13,6 +13,10 @@ export const save = async ( url: string) => {
   await resource.save();
 }
 
+export const remove = async (_id: string) => {
+  await Resource.deleteOne({_id})
+}
+
 export const getAll = async () => {
   const resources = Resource.find().lean();
   const mappedResources: Array<resource> = [];
